@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { FaInstagram } from 'react-icons/fa';
 
 export default function Gallery() {
@@ -13,7 +13,7 @@ export default function Gallery() {
           height={400}
           className="w-full object-cover h-full"
         />
-        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-400 ease-in">
+        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-600 ease-in">
           <a
             href="https://www.instagram.com/"
             target="_blank"
@@ -26,12 +26,12 @@ export default function Gallery() {
       <div className="relative flex-1 h-full group">
         <Image
           src="/gallery/grapefruit.avif"
-          alt="Picture of salad"
+          alt="Picture of grapefruits"
           width={250}
           height={400}
           className=" w-full object-cover h-full"
         />
-        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-400 ease-in">
+        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-600 ease-in">
           <a
             href="https://www.instagram.com/"
             target="_blank"
@@ -42,15 +42,15 @@ export default function Gallery() {
         </span>
       </div>
 
-      <div className="relative group flex-1 h-full">
+      <div className="relative group flex-1 h-full xs:max-md:hidden">
         <Image
           src="/gallery/apple.avif"
-          alt="Picture of salad"
+          alt="Picture of apple"
           width={250}
           height={400}
           className="w-full h-full object-cover"
         />
-        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-400 ease-in">
+        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-all duration-600 ease-in">
           <a
             href="https://www.instagram.com/"
             target="_blank"
@@ -64,12 +64,12 @@ export default function Gallery() {
       <div className="relative group flex-1 h-full">
         <Image
           src="/gallery/egg.avif"
-          alt="Picture of salad"
+          alt="Picture of egg"
           width={250}
           height={400}
           className="w-full h-full object-cover"
         />
-        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-400 ease-in">
+        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-600 ease-in">
           <a
             href="https://www.instagram.com/"
             target="_blank"
@@ -80,15 +80,15 @@ export default function Gallery() {
         </span>
       </div>
 
-      <div className="relative group flex-1 h-full">
+      <div className="relative group flex-1 h-full hidden xl:block">
         <Image
           src="/gallery/tortilla.avif"
-          alt="Picture of salad"
+          alt="Picture of tortilla"
           width={250}
           height={400}
           className="w-full h-full object-cover"
         />
-        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-800 ease-in">
+        <span className="flex justify-center items-center absolute right-0 -bottom-100 left-0 h-full bg-neutral3/80 group-hover:-translate-y-[400px] transition-transform duration-600 ease-in">
           <a
             href="https://www.instagram.com/"
             target="_blank"

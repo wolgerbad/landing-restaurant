@@ -3,8 +3,8 @@ import Button from './Button';
 
 export default function EventBooking() {
   return (
-    <div className="max-w-[1140px] mx-auto text-neutral1 pb-[120px]">
-      <div className="grid grid-cols-2 gap-[136px] ">
+    <div className="max-w-[1140px] mx-auto text-neutral1 pb-[120px] xs:max-xl:px-5 xs:max-md:text-center">
+      <div className="grid grid-cols-2 gap-[136px] xs:max-xl:grid-cols-1">
         <div className="flex flex-col">
           <div className="mb-[50px]">
             <p className="text-primary font-jost text-[18px]  mb-[24px]">
@@ -17,20 +17,20 @@ export default function EventBooking() {
 
           <div className="mb-[50px] bg-neutral3 relative py-[30px] px-[31px]">
             <h2 className="mb-[30px] text-3xl font-gilda">Opening Hour</h2>
-            <div className="flex flex-col gap-[21px]">
-              <div className="grid grid-cols-2 font-semibold gap-[30px]">
+            <div className="flex flex-col gap-5">
+              <div className="grid grid-cols-2 xs:max-md:grid-cols-1 justify-items-center xs:max-md:gap-4 font-semibold gap-[30px]">
                 <span className="text-primary font-jost text-[18px] font-semibold ">
                   Monday - Saturday
                 </span>
                 <span>7.30 am - 10.30 pm</span>
               </div>
-              <div className="grid grid-cols-2 font-semibold gap-[30px]">
+              <div className="grid grid-cols-2 xs:max-md:grid-cols-1 justify-items-center xs:max-md:gap-4 font-semibold gap-[30px]">
                 <span className="text-primary font-jost text-[18px] font-semibold ">
                   Sunday
                 </span>
                 <span>7.30 am - 11.30 pm</span>
               </div>
-              <div className="grid grid-cols-2 font-semibold gap-[30px]">
+              <div className="grid grid-cols-2 xs:max-md:grid-cols-1 justify-items-center xs:max-md:gap-4 font-semibold gap-[30px]">
                 <span className="text-primary font-jost text-[18px] font-semibold ">
                   Happy Hour
                 </span>
@@ -42,7 +42,7 @@ export default function EventBooking() {
                 src="/eventbooking/lemonade.avif"
                 alt="Lemonade photograph"
                 fill={true}
-                className="absolute right-0 top-0 bottom-0 opacity-20"
+                className="absolute right-0 top-0 bottom-0 opacity-20 xs:max-md:hidden"
               />
             </div>
           </div>
@@ -52,11 +52,11 @@ export default function EventBooking() {
             <span className="ml-1 text-primary underline">+01234 567 888</span>
           </span>
 
-          <Button className="self-start text-neutral1 font-semibold">
+          <Button className="self-start text-neutral1 font-semibold xs:max-md:mx-auto">
             book your table
           </Button>
         </div>
-        <span className="relative w-full">
+        <span className="relative w-full xs:max-md:hidden">
           <Image
             src="/eventbooking/main.avif"
             alt="A big meat photo"
@@ -70,7 +70,7 @@ export default function EventBooking() {
             alt="Small Pepper photo"
             width={150}
             height={125}
-            className="absolute top-0"
+            className="absolute top-0 xs:max-xl:hidden"
           />
         </span>
       </div>

@@ -12,7 +12,7 @@ type PropTypes = {
 
 export default function TestimonialCard({ testimonial }: PropTypes) {
   return (
-    <div className="embla__slide flex-[0_0_50%] min-w-0 px-4">
+    <div className="embla__slide flex-[0_0_50%] xs:max-xl:flex-[0_0_100%] min-w-0 px-4">
       <div className="embla__slide__number bg-neutral3 p-10">
         <p className="mb-10 text-xl font-jost">{testimonial.review}</p>
         <div className="flex gap-5">

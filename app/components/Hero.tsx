@@ -3,8 +3,8 @@ import Button from './Button';
 
 export default function Hero() {
   return (
-    <div className="text-neutral1 pt-64 pb-24 pr-5">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 gap-16 items-center">
+    <div className="text-neutral1 pt-64 pb-24 pr-5 xs:max-xl:px-5" id="home">
+      <div className="max-w-[1200px] mx-auto grid grid-cols-2 xs:max-xl:grid-cols-1 xs:max-xl:text-center gap-16 items-center">
         <div>
           <h1 className="text-7xl tracking-wide mb-8 font-gilda">
             Savor Every Moment with{' '}
@@ -16,17 +16,12 @@ export default function Hero() {
           </p>
           <Button className="font-jost font-semibold">Book your table</Button>
         </div>
-        <div className="relative aspect-square">
+        <div className="relative aspect-square xs:max-md:h-[250px] md:max-xl:h-[500px] xs:max-xl:mx-auto w-full">
           <Image
             src="/hero/bowl.webp"
             alt="Food bowl"
             fill={true}
-            className="z-40"
-          />
-          <img
-            src="/hero/leaf-next-bowl.avif"
-            alt="Food bowl"
-            className="absolute right-0 top-0 w-[10rem] h-[30rem]"
+            className="z-40 object-contain"
           />
         </div>
       </div>

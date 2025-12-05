@@ -21,6 +21,9 @@ const config: Config = {
         gilda: 'var(--font-gilda)',
         jost: 'var(--font-jost)',
       },
+      screens: {
+        xs: '320px',
+      },
     },
   },
   plugins: [],

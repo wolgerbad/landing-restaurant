@@ -2,14 +2,15 @@ import Image from 'next/image';
 
 export default function Feature() {
   return (
-    <div className="bg-neutral1 text-center text-neutral4">
-      <div className="max-w-[1200px] mx-auto px-[20px] py-[120px] flex gap-[35px] flex-wrap">
-        <div className="flex-1 flex flex-col gap-[20px]">
+    <div className="bg-neutral1 text-center text-neutral4 md:max-xl:px-20 xs:max-xl:px-5">
+      <div className="max-w-[1200px] mx-auto px-[20px] py-[120px] grid grid-cols-3 md:max-xl:grid-cols-2 xs:max-md:grid-cols-1 gap-[35px]">
+        <div className="flex flex-col gap-[20px]">
           <div className="relative aspect-square h-[280px]">
             <Image
               src="/feature/pasta.avif"
               alt="Small picture of a pasta"
               fill={true}
+              className="object-contain"
             />
           </div>
           <h3 className="text-3xl  font-gilda">Pasta & Noodles</h3>
@@ -18,7 +19,7 @@ export default function Feature() {
             rich sauces.
           </p>
         </div>
-        <div className="flex-1 flex flex-col gap-[20px]">
+        <div className="flex flex-col gap-[20px]">
           <div className="relative aspect-square h-[280px]">
             <Image
               src="/feature/dessert.avif"
@@ -33,12 +34,13 @@ export default function Feature() {
             on a high.
           </p>
         </div>
-        <div className="flex-1 flex flex-col gap-[20px]">
+        <div className="flex flex-col gap-[20px]">
           <div className="relative aspect-square h-[280px]">
             <Image
               src="/feature/burger.avif"
               alt="Small picture of a burger"
               fill={true}
+              className="object-contain"
             />
           </div>
           <h3 className="text-3xl font-gilda">Chef’s Specials</h3>

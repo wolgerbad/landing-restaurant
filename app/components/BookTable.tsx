@@ -11,7 +11,10 @@ export default function BookTable() {
   const [selectedTime, setSelectedTime] = useState(new Date());
 
   return (
-    <div className="bg-neutral3 py-28" id="booktable">
+    <div
+      className="bg-neutral3 py-28 xs:max-md:py-16 md:max-xl:py-24 xs:max-xl:px-5"
+      id="booktable"
+    >
       <div className="max-w-[1140px] mx-auto text-neutral1">
         <div className="mb-16">
           <p className="text-primary text-lg pb-6 text-center">
@@ -22,7 +25,7 @@ export default function BookTable() {
           </h2>
         </div>
 
-        <form className="grid grid-cols-2 gap-x-8 gap-y-6 font-jost">
+        <form className="grid grid-cols-2 xs:max-md:grid-cols-1 gap-x-8 gap-y-6 font-jost">
           <div>
             <label
               htmlFor="booking-name"

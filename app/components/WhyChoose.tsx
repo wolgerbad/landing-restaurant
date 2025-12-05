@@ -2,16 +2,19 @@ import Image from 'next/image';
 
 export default function WhyChoose() {
   return (
-    <div className="bg-neutral2 py-[120px] font-neutral4" id="whychoose">
-      <div className="max-w-[1144px] mx-auto grid grid-cols-2 gap-[70px]">
+    <div
+      className="bg-neutral2 py-[120px] font-neutral4 scroll-mt-20 xs:max-xl:px-5"
+      id="whychoose"
+    >
+      <div className="max-w-[1144px] mx-auto grid grid-cols-2 xs:max-xl:grid-cols-1 xs:max-xl:justify-items-center xs:max-md:text-center gap-[70px]">
         <div>
           <p className="text-primary font-jost text-[18px] mb-[24px]">
             Why Choose Us?
           </p>
           <h2 className="text-6xl font-gilda mb-[80px]">
-            More Than Dining It's Sofra
+            More Than Dining It&apos;s Sofra
           </h2>
-          <div className="flex flex-col gap-8 w-[79%]">
+          <div className="flex flex-col gap-8 w-[79%] xs:max-xl:w-full">
             <div className="bg-neutral1 flex gap-5 justify-between items-center px-5 py-[34px]">
               <div>
                 <h2 className="text-2xl font-gilda">
@@ -60,13 +63,14 @@ export default function WhyChoose() {
             </div>
           </div>
         </div>
-        <div className="pt-[67px] relative">
-          <div className="relative aspect-square">
+        <div className="pt-[67px] relative w-full md:max-xl:px-24 xs:max-md:hidden">
+          <div className="relative aspect-square md:max-xl:w-[80%] mx-auto">
             <Image
               src="/whychoose/main.avif"
               alt="Image of a plate filled with meat and potato"
               width={523}
               height={687}
+              className="xs:max-xl:h-[620px] w-full xs:max-xl:object-bottom xs:max-xl:object-cover"
             />
             <div className="p-[30px] w-[52.5%] flex flex-col gap-[10px] bg-neutral1 absolute -top-[30px] left-1/2 -translate-x-1/2 border border-primary text-center">
               <span className="text-neutral4 text-[18px] font-jost">

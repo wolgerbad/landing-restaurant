@@ -51,7 +51,7 @@ export default function Testimonial() {
   } = usePrevNextButtons(emblaApi);
 
   return (
-    <div className="bg-neutral1">
+    <div className="bg-neutral1 xs:max-xl:px-5">
       <div className="max-w-[1140px] mx-auto py-28 overflow-hidden">
         <p className="mb-6 text-center text-[18px] font-jost text-primary">
           Testimonial
