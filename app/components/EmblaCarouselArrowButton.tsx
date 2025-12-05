@@ -5,7 +5,6 @@ import React, {
   useState,
 } from 'react';
 import { EmblaCarouselType } from 'embla-carousel';
-import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
 
 type UsePrevNextButtonsType = {
   prevBtnDisabled: boolean;

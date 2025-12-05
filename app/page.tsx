@@ -12,7 +12,6 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Testimonial from './components/Testimonial';
 import WhyChoose from './components/WhyChoose';
-import { motion } from 'motion/react';
 
 export default function Home() {
   const lenis = new Lenis({
