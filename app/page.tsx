@@ -1,6 +1,5 @@
 'use client';
 
-import Lenis from 'lenis';
 import About from './components/About';
 import BookTable from './components/BookTable';
 import EventBooking from './components/EventBooking';
@@ -12,14 +11,11 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Testimonial from './components/Testimonial';
 import WhyChoose from './components/WhyChoose';
+import LenisProvider from './components/LenisProvider';
 
 export default function Home() {
-  const lenis = new Lenis({
-    autoRaf: true,
-  });
-
   return (
-    <div ref={lenis}>
+    <LenisProvider>
       <div className="bg-neutral4">
         <Navbar />
         <Hero />
@@ -33,6 +29,6 @@ export default function Home() {
         <Gallery />
         <Footer />
       </div>
-    </div>
+    </LenisProvider>
   );
 }
